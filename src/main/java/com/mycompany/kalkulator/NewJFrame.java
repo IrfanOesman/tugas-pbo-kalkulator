@@ -31,7 +31,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         Field1 = new javax.swing.JTextField();
-        ButtonKurangDari = new javax.swing.JButton();
+        ButtonBackspace = new javax.swing.JButton();
         Button7 = new javax.swing.JButton();
         Button8 = new javax.swing.JButton();
         Button9 = new javax.swing.JButton();
@@ -56,13 +56,13 @@ public class NewJFrame extends javax.swing.JFrame {
         Field1.setText("0");
         Field1.addActionListener(this::Field1ActionPerformed);
 
-        ButtonKurangDari.setText("<");
-        ButtonKurangDari.addMouseListener(new java.awt.event.MouseAdapter() {
+        ButtonBackspace.setText("<");
+        ButtonBackspace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonKurangDariMouseClicked(evt);
+                ButtonBackspaceMouseClicked(evt);
             }
         });
-        ButtonKurangDari.addActionListener(this::ButtonKurangDariActionPerformed);
+        ButtonBackspace.addActionListener(this::ButtonBackspaceActionPerformed);
 
         Button7.setText("7");
         Button7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -200,7 +200,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ButtonKurangDari, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ButtonBackspace, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ButtonPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -231,7 +231,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Field1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ButtonKurangDari, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
+                    .addComponent(ButtonBackspace, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Button7, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
@@ -280,19 +280,20 @@ public class NewJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_Field1ActionPerformed
 
-    private void ButtonKurangDariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKurangDariActionPerformed
+    private void ButtonBackspaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonBackspaceActionPerformed
     
-    }//GEN-LAST:event_ButtonKurangDariActionPerformed
+    }//GEN-LAST:event_ButtonBackspaceActionPerformed
 
-    private void ButtonKurangDariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonKurangDariMouseClicked
+    private void ButtonBackspaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonBackspaceMouseClicked
             String nilaiBaru;
             nilaiBaru = Field1.getText().substring(0, Field1.getText().length() - 1);
             bil = nilaiBaru;
+            Field1.setText(nilaiBaru);
             if (Field1.getText().length() == 0){
                 Field1.setText("0");
                 bil = "";
             }
-    }//GEN-LAST:event_ButtonKurangDariMouseClicked
+    }//GEN-LAST:event_ButtonBackspaceMouseClicked
 
     private void Button7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button7MouseClicked
         bil += "7";
@@ -358,7 +359,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void ButtonCLearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonCLearMouseClicked
         double hasil;
-   
+        bil = "";
+        bil1 = 0.0;
+        bil2 = 0.0;
+        hasil = 0.0;
+        Field1.setText("0");
     }//GEN-LAST:event_ButtonCLearMouseClicked
 
     private void ButtonMinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMinMouseClicked
@@ -443,10 +448,10 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton Button7;
     private javax.swing.JButton Button8;
     private javax.swing.JButton Button9;
+    private javax.swing.JButton ButtonBackspace;
     private javax.swing.JButton ButtonBagi;
     private javax.swing.JButton ButtonCLear;
     private javax.swing.JButton ButtonKali;
-    private javax.swing.JButton ButtonKurangDari;
     private javax.swing.JButton ButtonMin;
     private javax.swing.JButton ButtonPlus;
     private javax.swing.JButton ButtonSamaDengan;

@@ -39,7 +39,7 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ButtonKurangDari" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="ButtonBackspace" min="-2" pref="75" max="-2" attributes="0"/>
                           <Component id="ButtonPlus" min="-2" pref="75" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -80,7 +80,7 @@
               <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Field1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="ButtonKurangDari" alignment="3" pref="40" max="32767" attributes="0"/>
+                  <Component id="ButtonBackspace" alignment="3" pref="40" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -127,13 +127,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Field1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonKurangDari">
+    <Component class="javax.swing.JButton" name="ButtonBackspace">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonKurangDariMouseClicked"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonKurangDariActionPerformed"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonBackspaceMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonBackspaceActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button7">
