@@ -11,6 +11,6 @@ package com.mycompany.kalkulator;
 public class Kalkulator {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new NewJFrame().setVisible(true);
     }
 }

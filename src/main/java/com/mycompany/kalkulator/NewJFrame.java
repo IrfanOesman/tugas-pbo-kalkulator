@@ -10,7 +10,7 @@ package com.mycompany.kalkulator;
  */
 public class NewJFrame extends javax.swing.JFrame {
     String bil = "";
-    double jumlah, bill, bil2;
+    double jumlah, bil1, bil2;
     int pilih;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame.class.getName());
 
@@ -38,7 +38,7 @@ public class NewJFrame extends javax.swing.JFrame {
         ButtonPlus = new javax.swing.JButton();
         Button4 = new javax.swing.JButton();
         Button5 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        Button6 = new javax.swing.JButton();
         ButtonMin = new javax.swing.JButton();
         Button1 = new javax.swing.JButton();
         Button2 = new javax.swing.JButton();
@@ -57,44 +57,130 @@ public class NewJFrame extends javax.swing.JFrame {
         Field1.addActionListener(this::Field1ActionPerformed);
 
         ButtonKurangDari.setText("<");
+        ButtonKurangDari.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonKurangDariMouseClicked(evt);
+            }
+        });
         ButtonKurangDari.addActionListener(this::ButtonKurangDariActionPerformed);
 
         Button7.setText("7");
+        Button7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button7MouseClicked(evt);
+            }
+        });
 
         Button8.setText("8");
+        Button8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button8MouseClicked(evt);
+            }
+        });
+        Button8.addActionListener(this::Button8ActionPerformed);
 
         Button9.setText("9");
+        Button9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button9MouseClicked(evt);
+            }
+        });
         Button9.addActionListener(this::Button9ActionPerformed);
 
         ButtonPlus.setText("+");
+        ButtonPlus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonPlusMouseClicked(evt);
+            }
+        });
         ButtonPlus.addActionListener(this::ButtonPlusActionPerformed);
 
         Button4.setText("4");
+        Button4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button4MouseClicked(evt);
+            }
+        });
 
         Button5.setText("5");
+        Button5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button5MouseClicked(evt);
+            }
+        });
 
-        jButton8.setText("6");
+        Button6.setText("6");
+        Button6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button6MouseClicked(evt);
+            }
+        });
 
         ButtonMin.setText("-");
+        ButtonMin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonMinMouseClicked(evt);
+            }
+        });
 
         Button1.setText("1");
+        Button1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button1MouseClicked(evt);
+            }
+        });
 
         Button2.setText("2");
+        Button2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button2MouseClicked(evt);
+            }
+        });
 
         Button3.setText("3");
+        Button3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button3MouseClicked(evt);
+            }
+        });
 
         ButtonKali.setText("x");
+        ButtonKali.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonKaliMouseClicked(evt);
+            }
+        });
 
         ButtonBagi.setText("/");
 
         ButtonTitik.setText(".");
+        ButtonTitik.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonTitikMouseClicked(evt);
+            }
+        });
         ButtonTitik.addActionListener(this::ButtonTitikActionPerformed);
 
         Button0.setText("0");
+        Button0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button0MouseClicked(evt);
+            }
+        });
 
         ButtonSamaDengan.setText("=");
+        ButtonSamaDengan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonSamaDenganMouseClicked(evt);
+            }
+        });
 
         ButtonCLear.setText("C");
+        ButtonCLear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonCLearMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -130,7 +216,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(ButtonSamaDengan, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                             .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(Button6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ButtonMin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -156,7 +242,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonMin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -191,12 +277,135 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_Button9ActionPerformed
 
     private void Field1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field1ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_Field1ActionPerformed
 
     private void ButtonKurangDariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKurangDariActionPerformed
     
     }//GEN-LAST:event_ButtonKurangDariActionPerformed
+
+    private void ButtonKurangDariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonKurangDariMouseClicked
+            String nilaiBaru;
+            nilaiBaru = Field1.getText().substring(0, Field1.getText().length() - 1);
+            bil = nilaiBaru;
+            if (Field1.getText().length() == 0){
+                Field1.setText("0");
+                bil = "";
+            }
+    }//GEN-LAST:event_ButtonKurangDariMouseClicked
+
+    private void Button7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button7MouseClicked
+        bil += "7";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button7MouseClicked
+
+    private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button8ActionPerformed
+
+    private void Button8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button8MouseClicked
+        bil += "8";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button8MouseClicked
+
+    private void Button9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button9MouseClicked
+        bil += "9";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button9MouseClicked
+
+    private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
+         bil += "4";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button4MouseClicked
+
+    private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
+        bil += "5";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button5MouseClicked
+
+    private void Button6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button6MouseClicked
+        bil += "6";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button6MouseClicked
+
+    private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
+        bil += "1";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button1MouseClicked
+
+    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
+        bil += "2";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button2MouseClicked
+
+    private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
+          bil += "3";
+        Field1.setText(bil);
+    }//GEN-LAST:event_Button3MouseClicked
+
+    private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
+        if (!Field1.getText().equals("0")) {
+        bil += "0";
+        Field1.setText(bil);
+        }
+    }//GEN-LAST:event_Button0MouseClicked
+
+    private void ButtonPlusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonPlusMouseClicked
+        bil1 = Double.parseDouble(Field1.getText());
+        bil = "";
+        pilih = 1;
+    }//GEN-LAST:event_ButtonPlusMouseClicked
+
+    private void ButtonCLearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonCLearMouseClicked
+        double hasil;
+   
+    }//GEN-LAST:event_ButtonCLearMouseClicked
+
+    private void ButtonMinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMinMouseClicked
+        bil1 = Double.parseDouble(Field1.getText());
+        bil = "";
+        pilih = 2;
+    }//GEN-LAST:event_ButtonMinMouseClicked
+
+    private void ButtonKaliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonKaliMouseClicked
+        bil1 = Double.parseDouble(Field1.getText());
+        bil = "";
+        pilih = 3;
+    }//GEN-LAST:event_ButtonKaliMouseClicked
+
+    private void ButtonTitikMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonTitikMouseClicked
+          if (!Field1.getText().contains(".")) {
+              if (Field1.getText().equals("0")) {
+                  bil += "0.";
+              } else {
+                  bil += ".";
+                  Field1.setText(bil);
+              }
+        }
+    }//GEN-LAST:event_ButtonTitikMouseClicked
+
+    private void ButtonSamaDenganMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonSamaDenganMouseClicked
+      bil2 = Double.parseDouble(Field1.getText());
+      double hasil = 0;
+        switch (pilih) {
+            case 1:
+                hasil = bil1 + bil2;
+                break;
+                case 2:
+                hasil = bil1 - bil2;
+                break;
+                case 3:
+                hasil = bil1 * bil2;
+                break;
+                case 4:
+                hasil = bil1 / bil2;
+                break;
+            default:
+                throw new AssertionError();
+        }
+        bil = "";
+        Field1.setText(String.valueOf(hasil));
+    }//GEN-LAST:event_ButtonSamaDenganMouseClicked
 
     /**
      * @param args the command line arguments
@@ -230,6 +439,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton Button3;
     private javax.swing.JButton Button4;
     private javax.swing.JButton Button5;
+    private javax.swing.JButton Button6;
     private javax.swing.JButton Button7;
     private javax.swing.JButton Button8;
     private javax.swing.JButton Button9;
@@ -242,6 +452,5 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton ButtonSamaDengan;
     private javax.swing.JButton ButtonTitik;
     private javax.swing.JTextField Field1;
-    private javax.swing.JButton jButton8;
     // End of variables declaration//GEN-END:variables
 }

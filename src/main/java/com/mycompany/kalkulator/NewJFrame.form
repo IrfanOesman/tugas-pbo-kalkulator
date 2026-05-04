@@ -59,7 +59,7 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="ButtonSamaDengan" pref="75" max="32767" attributes="0"/>
                           <Component id="Button3" max="32767" attributes="0"/>
-                          <Component id="jButton8" max="32767" attributes="0"/>
+                          <Component id="Button6" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -93,7 +93,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Button4" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   <Component id="Button5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="jButton8" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="Button6" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   <Component id="ButtonMin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -132,6 +132,7 @@
         <Property name="text" type="java.lang.String" value="&lt;"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonKurangDariMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonKurangDariActionPerformed"/>
       </Events>
     </Component>
@@ -139,17 +140,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button7MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button8">
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button8MouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button9">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button9MouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button9ActionPerformed"/>
       </Events>
     </Component>
@@ -158,6 +167,7 @@
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonPlusMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonPlusActionPerformed"/>
       </Events>
     </Component>
@@ -165,41 +175,65 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button4MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button5MouseClicked"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="Button6">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button6MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonMin">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonMinMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button1MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button2MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button3MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonKali">
       <Properties>
         <Property name="text" type="java.lang.String" value="x"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonKaliMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonBagi">
       <Properties>
@@ -211,6 +245,7 @@
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonTitikMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonTitikActionPerformed"/>
       </Events>
     </Component>
@@ -218,16 +253,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button0MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonSamaDengan">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonSamaDenganMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonCLear">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonCLearMouseClicked"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
