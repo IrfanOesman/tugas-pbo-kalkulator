@@ -30,32 +30,47 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         Field1 = new javax.swing.JTextField();
         ButtonBackspace = new javax.swing.JButton();
-        Button7 = new javax.swing.JButton();
-        Button8 = new javax.swing.JButton();
-        Button9 = new javax.swing.JButton();
         ButtonPlus = new javax.swing.JButton();
-        Button4 = new javax.swing.JButton();
-        Button5 = new javax.swing.JButton();
-        Button6 = new javax.swing.JButton();
+        Button9 = new javax.swing.JButton();
+        Button8 = new javax.swing.JButton();
+        Button7 = new javax.swing.JButton();
         ButtonMin = new javax.swing.JButton();
+        Button6 = new javax.swing.JButton();
+        Button5 = new javax.swing.JButton();
+        Button4 = new javax.swing.JButton();
         Button1 = new javax.swing.JButton();
         Button2 = new javax.swing.JButton();
         Button3 = new javax.swing.JButton();
         ButtonKali = new javax.swing.JButton();
-        ButtonBagi = new javax.swing.JButton();
-        ButtonTitik = new javax.swing.JButton();
         Button0 = new javax.swing.JButton();
+        ButtonTitik = new javax.swing.JButton();
         ButtonSamaDengan = new javax.swing.JButton();
+        ButtonBagi = new javax.swing.JButton();
+        ButtonPangkat2 = new javax.swing.JButton();
+        ButtonPersen = new javax.swing.JButton();
         ButtonCLear = new javax.swing.JButton();
+        ButtonMod = new javax.swing.JButton();
+        ButtonPangkat3 = new javax.swing.JButton();
+        ButtonAkar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(30, 30, 46));
+
         Field1.setEditable(false);
+        Field1.setBackground(new java.awt.Color(42, 42, 62));
+        Field1.setFont(new java.awt.Font("Consolas", 1, 22)); // NOI18N
+        Field1.setForeground(new java.awt.Color(204, 204, 204));
         Field1.setText("0");
+        Field1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(85, 85, 119), 1, true));
         Field1.addActionListener(this::Field1ActionPerformed);
 
+        ButtonBackspace.setBackground(new java.awt.Color(192, 57, 43));
+        ButtonBackspace.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        ButtonBackspace.setForeground(new java.awt.Color(255, 255, 255));
         ButtonBackspace.setText("<");
         ButtonBackspace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -64,29 +79,9 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         ButtonBackspace.addActionListener(this::ButtonBackspaceActionPerformed);
 
-        Button7.setText("7");
-        Button7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button7MouseClicked(evt);
-            }
-        });
-
-        Button8.setText("8");
-        Button8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button8MouseClicked(evt);
-            }
-        });
-        Button8.addActionListener(this::Button8ActionPerformed);
-
-        Button9.setText("9");
-        Button9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button9MouseClicked(evt);
-            }
-        });
-        Button9.addActionListener(this::Button9ActionPerformed);
-
+        ButtonPlus.setBackground(new java.awt.Color(92, 92, 255));
+        ButtonPlus.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ButtonPlus.setForeground(new java.awt.Color(255, 255, 255));
         ButtonPlus.setText("+");
         ButtonPlus.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -95,27 +90,41 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         ButtonPlus.addActionListener(this::ButtonPlusActionPerformed);
 
-        Button4.setText("4");
-        Button4.addMouseListener(new java.awt.event.MouseAdapter() {
+        Button9.setBackground(new java.awt.Color(45, 45, 68));
+        Button9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button9.setForeground(new java.awt.Color(255, 255, 255));
+        Button9.setText("9");
+        Button9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button4MouseClicked(evt);
+                Button9MouseClicked(evt);
+            }
+        });
+        Button9.addActionListener(this::Button9ActionPerformed);
+
+        Button8.setBackground(new java.awt.Color(45, 45, 68));
+        Button8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button8.setForeground(new java.awt.Color(255, 255, 255));
+        Button8.setText("8");
+        Button8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button8MouseClicked(evt);
+            }
+        });
+        Button8.addActionListener(this::Button8ActionPerformed);
+
+        Button7.setBackground(new java.awt.Color(45, 45, 68));
+        Button7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button7.setForeground(new java.awt.Color(255, 255, 255));
+        Button7.setText("7");
+        Button7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button7MouseClicked(evt);
             }
         });
 
-        Button5.setText("5");
-        Button5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button5MouseClicked(evt);
-            }
-        });
-
-        Button6.setText("6");
-        Button6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button6MouseClicked(evt);
-            }
-        });
-
+        ButtonMin.setBackground(new java.awt.Color(92, 92, 255));
+        ButtonMin.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ButtonMin.setForeground(new java.awt.Color(255, 255, 255));
         ButtonMin.setText("-");
         ButtonMin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -123,6 +132,39 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        Button6.setBackground(new java.awt.Color(45, 45, 68));
+        Button6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button6.setForeground(new java.awt.Color(255, 255, 255));
+        Button6.setText("6");
+        Button6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button6MouseClicked(evt);
+            }
+        });
+
+        Button5.setBackground(new java.awt.Color(45, 45, 68));
+        Button5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button5.setForeground(new java.awt.Color(255, 255, 255));
+        Button5.setText("5");
+        Button5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button5MouseClicked(evt);
+            }
+        });
+
+        Button4.setBackground(new java.awt.Color(45, 45, 68));
+        Button4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button4.setForeground(new java.awt.Color(255, 255, 255));
+        Button4.setText("4");
+        Button4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button4MouseClicked(evt);
+            }
+        });
+
+        Button1.setBackground(new java.awt.Color(45, 45, 68));
+        Button1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button1.setForeground(new java.awt.Color(255, 255, 255));
         Button1.setText("1");
         Button1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -130,6 +172,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        Button2.setBackground(new java.awt.Color(45, 45, 68));
+        Button2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button2.setForeground(new java.awt.Color(255, 255, 255));
         Button2.setText("2");
         Button2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -137,6 +182,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        Button3.setBackground(new java.awt.Color(45, 45, 68));
+        Button3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button3.setForeground(new java.awt.Color(255, 255, 255));
         Button3.setText("3");
         Button3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -144,6 +192,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        ButtonKali.setBackground(new java.awt.Color(92, 92, 255));
+        ButtonKali.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ButtonKali.setForeground(new java.awt.Color(255, 255, 255));
         ButtonKali.setText("x");
         ButtonKali.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -151,8 +202,19 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        ButtonBagi.setText("/");
+        Button0.setBackground(new java.awt.Color(45, 45, 68));
+        Button0.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Button0.setForeground(new java.awt.Color(255, 255, 255));
+        Button0.setText("0");
+        Button0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button0MouseClicked(evt);
+            }
+        });
 
+        ButtonTitik.setBackground(new java.awt.Color(45, 45, 68));
+        ButtonTitik.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        ButtonTitik.setForeground(new java.awt.Color(255, 255, 255));
         ButtonTitik.setText(".");
         ButtonTitik.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -161,13 +223,9 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         ButtonTitik.addActionListener(this::ButtonTitikActionPerformed);
 
-        Button0.setText("0");
-        Button0.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button0MouseClicked(evt);
-            }
-        });
-
+        ButtonSamaDengan.setBackground(new java.awt.Color(255, 107, 107));
+        ButtonSamaDengan.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ButtonSamaDengan.setForeground(new java.awt.Color(255, 255, 255));
         ButtonSamaDengan.setText("=");
         ButtonSamaDengan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -175,6 +233,33 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        ButtonBagi.setBackground(new java.awt.Color(92, 92, 255));
+        ButtonBagi.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ButtonBagi.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonBagi.setText("/");
+
+        ButtonPangkat2.setBackground(new java.awt.Color(46, 125, 107));
+        ButtonPangkat2.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        ButtonPangkat2.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonPangkat2.setText("x²");
+        ButtonPangkat2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonPangkat2MouseClicked(evt);
+            }
+        });
+
+        ButtonPersen.setBackground(new java.awt.Color(123, 94, 167));
+        ButtonPersen.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        ButtonPersen.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonPersen.setText("%");
+        ButtonPersen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonPersenMouseClicked(evt);
+            }
+        });
+
+        ButtonCLear.setBackground(new java.awt.Color(231, 76, 60));
+        ButtonCLear.setForeground(new java.awt.Color(255, 255, 255));
         ButtonCLear.setText("C");
         ButtonCLear.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -182,83 +267,145 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(156, 156, 156)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Field1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
+        ButtonMod.setBackground(new java.awt.Color(123, 94, 167));
+        ButtonMod.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        ButtonMod.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonMod.setText("mod");
+        ButtonMod.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonModMouseClicked(evt);
+            }
+        });
+
+        ButtonPangkat3.setBackground(new java.awt.Color(46, 125, 107));
+        ButtonPangkat3.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        ButtonPangkat3.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonPangkat3.setText("x³");
+        ButtonPangkat3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonPangkat3MouseClicked(evt);
+            }
+        });
+
+        ButtonAkar.setBackground(new java.awt.Color(46, 125, 107));
+        ButtonAkar.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonAkar.setText("√");
+        ButtonAkar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonAkarMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(ButtonCLear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(27, 27, 27)
+                        .addComponent(ButtonAkar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(18, 18, 18)
                                 .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ButtonBackspace, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ButtonPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Button0, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                            .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ButtonTitik, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                            .addComponent(Button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ButtonSamaDengan, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                            .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(18, 18, 18)
+                                .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(ButtonTitik, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(ButtonPangkat3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(ButtonPangkat2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ButtonSamaDengan, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ButtonMod, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(Field1))
+                        .addGap(27, 27, 27)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(ButtonBackspace, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ButtonPlus, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                             .addComponent(ButtonMin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ButtonKali, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ButtonBagi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(ButtonCLear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(153, Short.MAX_VALUE))
+                            .addComponent(ButtonBagi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ButtonPersen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(78, 78, 78))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Field1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonBackspace, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Button7, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                    .addComponent(ButtonPlus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Button8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Button9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButtonPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButtonMin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ButtonMin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonKali, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonBagi, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Button0, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ButtonTitik, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonSamaDengan, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ButtonTitik, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ButtonCLear, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(209, 209, 209))
+                    .addComponent(ButtonBagi, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ButtonPersen, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ButtonPangkat2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ButtonMod, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ButtonPangkat3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ButtonAkar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ButtonCLear, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -368,12 +515,14 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void ButtonMinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMinMouseClicked
         bil1 = Double.parseDouble(Field1.getText());
+              Field1.setText("0");
         bil = "";
         pilih = 2;
     }//GEN-LAST:event_ButtonMinMouseClicked
 
     private void ButtonKaliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonKaliMouseClicked
         bil1 = Double.parseDouble(Field1.getText());
+        Field1.setText("0");
         bil = "";
         pilih = 3;
     }//GEN-LAST:event_ButtonKaliMouseClicked
@@ -405,12 +554,59 @@ public class NewJFrame extends javax.swing.JFrame {
                 case 4:
                 hasil = bil1 / bil2;
                 break;
+                case 5:
+                hasil = bil1 * (bil2 / 100);
+                break;
+                case 6:
+                hasil = bil1 % bil2;
+                 break;
             default:
                 throw new AssertionError();
         }
         bil = "";
         Field1.setText(String.valueOf(hasil));
     }//GEN-LAST:event_ButtonSamaDenganMouseClicked
+
+    private void ButtonPersenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonPersenMouseClicked
+        bil1 = Double.parseDouble(Field1.getText());
+        bil = "";
+        pilih = 5;
+    }//GEN-LAST:event_ButtonPersenMouseClicked
+
+    private void ButtonModMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonModMouseClicked
+        bil1 = Double.parseDouble(Field1.getText());
+        bil = "";
+        pilih = 6;
+    }//GEN-LAST:event_ButtonModMouseClicked
+
+    private void ButtonPangkat2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonPangkat2MouseClicked
+    double nilai = Double.parseDouble(Field1.getText());
+    double hasil = Math.pow(nilai, 2);
+    bil = "";
+    pilih = 0;
+    Field1.setText(String.valueOf(hasil));
+    }//GEN-LAST:event_ButtonPangkat2MouseClicked
+
+    private void ButtonPangkat3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonPangkat3MouseClicked
+    double nilai = Double.parseDouble(Field1.getText());
+    double hasil = Math.pow(nilai, 3);
+    bil = "";
+    pilih = 0; // reset pilihan operator!
+    Field1.setText(String.valueOf(hasil));
+       
+    }//GEN-LAST:event_ButtonPangkat3MouseClicked
+
+    private void ButtonAkarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonAkarMouseClicked
+        double nilai = Double.parseDouble(Field1.getText());
+        if (nilai < 0) {
+        Field1.setText("Error");
+        bil = "";
+        } else {
+        double hasil = Math.sqrt(nilai);
+        bil = "";
+        Field1.setText(String.valueOf(hasil));
+        }
+    }//GEN-LAST:event_ButtonAkarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -448,14 +644,20 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton Button7;
     private javax.swing.JButton Button8;
     private javax.swing.JButton Button9;
+    private javax.swing.JButton ButtonAkar;
     private javax.swing.JButton ButtonBackspace;
     private javax.swing.JButton ButtonBagi;
     private javax.swing.JButton ButtonCLear;
     private javax.swing.JButton ButtonKali;
     private javax.swing.JButton ButtonMin;
+    private javax.swing.JButton ButtonMod;
+    private javax.swing.JButton ButtonPangkat2;
+    private javax.swing.JButton ButtonPangkat3;
+    private javax.swing.JButton ButtonPersen;
     private javax.swing.JButton ButtonPlus;
     private javax.swing.JButton ButtonSamaDengan;
     private javax.swing.JButton ButtonTitik;
     private javax.swing.JTextField Field1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
